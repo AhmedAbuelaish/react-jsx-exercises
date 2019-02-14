@@ -1,0 +1,30 @@
+.logo {
+    transform: perspective(400px) rotateY(-20deg);
+    margin: 100px;
+}
+
+.row {
+    display: flex;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.orange {
+    background-color: rgb(243, 101, 35);
+}
+
+.green {
+    background-color: rgb(141,199,64);
+}
+
+.blue {
+    background-color: rgb(0,174,240);
+}
+
+.yellow {
+    background-color: rgb(255, 194, 15);
+}

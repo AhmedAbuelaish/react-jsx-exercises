@@ -1,15 +1,30 @@
 let Header = () => {
-    return <span>Design a header for your blog</span>
+    return <h1>Design a header for your blog</h1>
 }
 let Article = () => {
-    return <span>Write and design your blog article</span>
+    return (
+    <div>
+        <p>Write and design your blog article</p>
+        <p>nklasndl;asn; dnaskld; jakls;jdkla;sdjk ajkld; jskl; jkla; djkl;ajdkl;s ajdkl;a jksl;dnm,x.cn.,vsdjjf;sa dsc;ldkls;djkfls dm,cdsc sdkl;sd lcmds,c ;msdkl;csd c</p>
+        <p>Write and design your blog article</p>
+        <p>nklasndl;asn; dnaskld; jakls;jdkla;sdjk ajkld; jskl; jkla; djkl;ajdkl;s ajdkl;a jksl;dnm,x.cn.,vsdjjf;sa dsc;ldkls;djkfls dm,cdsc sdkl;sd lcmds,c ;msdkl;csd c</p>
+        <p>nklasndl;asn; dnaskld; jakls;jdkla;sdjk ajkld; jskl; jkla; djkl;ajdkl;s ajdkl;a jksl;dnm,x.cn.,vsdjjf;sa dsc;ldkls;djkfls dm,cdsc sdkl;sd lcmds,c ;msdkl;csd c</p>
+        <p>Write and design your blog article</p>
+    </div>
+    )
 }
 let Footer = () => {
-    return <span>Design a footer for your blog</span>
+    return <h6>Design a footer for your blog</h6>
 }
 
 let Blog = () => {
-    return <span>Make this Component render the header, article, and footer</span>
+    return (
+        <div>
+            <Header />
+            <Article />
+            <Footer />
+        </div>
+    )
 }
 
 

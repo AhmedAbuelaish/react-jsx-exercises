@@ -1,17 +1,37 @@
-let TextInput = () => {
-    return <span>Make this component render a styled text input tag</span>
+let TextInput = (props) => {
+    return (
+        <div>
+            <label>{props.name}:</label><input type="test" name={props.name} />
+        </div>
+    )
 }
 
-let YesNoRadio = () => {
-    return <span>Make this component render two styled radio button side by side labelled "yes" and "no"</span>
+let YesNoRadio = (props) => {
+    return (
+        <div className="radioButtons">
+            <label><input type="radio" name={props.name} value="yes" />Yes</label>
+            <label><input type="radio" name={props.name} value="no" />No</label>
+        </div>
+    )
 }
 
 let SubmitButton = () => {
-    return <span>Make this component render a styled button of type "submit"</span>
+    return (
+        <input type="submit" value="Submit" />
+    )
 }
 
 let Form = () => {
-    return <span>Make this Component render a form tag with 3 text inputs, two yes/no radio buttons, and a submit button </span>
+    return (
+        <form>
+            <TextInput name="Username" />
+            <TextInput name="Email" />
+            <TextInput name="Password" />
+            <YesNoRadio name="FirstRadio" />
+            <YesNoRadio name="SecondRadio" />
+            <SubmitButton />
+        </form>
+    )
 }
 
 
